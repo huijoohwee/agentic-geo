@@ -1,0 +1,21 @@
+{
+  "name": "agentic-geo",
+  "version": "0.1.0",
+  "description": "Portable longitude primitives with no runtime dependencies or effects.",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=22.22.0" },
+  "repository": { "type": "git", "url": "https://github.com/huijoohwee/agentic-geo.git" },
+  "scripts": {
+    "setup": "agentic-os setup",
+    "doctor": "agentic-os doctor",
+    "lane": "agentic-os start",
+    "land": "agentic-os land",
+    "release:common": "agentic-os release-common",
+    "check": "node --test && npm --prefix node_modules/agentic-os run evals",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "agentic-os": "github:huijoohwee/agentic-os#45ea0e1f4a87976c4427a6a393dfffcbdb6c5a6a"
+  }
+}

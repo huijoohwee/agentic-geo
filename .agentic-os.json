@@ -1,0 +1,45 @@
+{
+  "schema": "agentic-os/repository-profile/v1",
+  "repository": "github.com/huijoohwee/agentic-geo",
+  "canonical": {
+    "localRef": "refs/heads/main",
+    "remoteRef": "refs/remotes/origin/main"
+  },
+  "adapters": {
+    "repository": {
+      "id": "git",
+      "version": "1"
+    },
+    "provider": {
+      "id": "github",
+      "version": "1"
+    }
+  },
+  "requiredChecks": [
+    "Integration Gate"
+  ],
+  "capabilities": [
+    "deep-byte-audit-opt-in",
+    "history:linear",
+    "host-qualified-repository-pin",
+    "integration-method:squash",
+    "protected-integration:pull-request",
+    "read-only-repository-observation",
+    "read-only-review-observation",
+    "remove-clean-worktree-cleanup-opt-in",
+    "shallow-observation-default"
+  ],
+  "authority": {
+    "runtime": "consumer",
+    "release": "consumer"
+  },
+  "cleanup": {
+    "localBranch": "retain",
+    "remoteBranch": "retain",
+    "remoteTrackingRef": "retain",
+    "unreachableObjects": "retain",
+    "worktreeProjection": "remove-clean",
+    "worktreeRegistration": "remove-clean"
+  },
+  "profileDigest": "d28570124d5c421e841763e89d6d696ac2df3c3392618f5be4aa57c43a8ddd05"
+}
