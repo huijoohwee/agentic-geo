@@ -28,6 +28,11 @@ existing unbounded native signature is preserved. All other geometry remains
 Graph-owned. Design controls stay with the existing design system; no new UI
 framework, Base engine, Canvas facade or invocation server is introduced.
 
+Annotation and hit-testing belong to the rendered product surface. Graph and
+Commerce may mark their own visible semantic UI targets and run the one shared
+Design System assertion; `agentic-geo` itself stays DOM-free and does not define
+or depend on a target selector.
+
 Owner-approved repository enrollment: `github.com/huijoohwee/agentic-geo`, public,
 MIT, `main`, required `Integration Gate`, pull-request protected squash integration,
 consumer runtime/release authority, retained refs and explicit clean-worktree

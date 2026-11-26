@@ -14,6 +14,12 @@ math; consumers retain validation, provenance, precision, storage and publicatio
 rules. Consumers must choose their own input bounds. Existing callers are not
 silently capped. Map rendering remains in its current product owner.
 
+Geo remains headless: it owns no page, DOM, renderer, selection selector, or
+annotation-target audit, and it has no Design System runtime dependency. A product
+that renders Geo results owns visible semantic target names and calls the shared
+`agentic-design-system` annotation assertion from its browser release check. Do not
+add annotation markup to this longitude package.
+
 Run `npm run check`. Both consumers run the same exported compatibility cases at
 `agentic-geo/testing/longitude-cases` against their own installed `core` export.
 Use exact immutable source pins and commit lockfiles; no sibling source imports.
